@@ -34,9 +34,9 @@ Cybersecurity and data privacy
 
 
 ## The Booking system project → Phase 1
-1. [First Report](First_generate_report.MD) and   [Summary](FirstReport-.html)
+1. [First Report](First_generate_report.MD)
 
-2. [Second Report](Second_generate_report.MD)  and [Summary](SecondReport.html)
+2. [Second Report](Second_generate_report.MD) 
 
 ### Details
 There were 6 Alart. There were 6 risks. Alert Path Traversal and SQL Injection was high. Content Security Policy (CSP) Header Not Set and Missing Anti-clickjacking Header alert is medium. X-Content-Type-Options Header Missing alert is low and User Agent Fuzzer is Informational. 
