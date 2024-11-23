@@ -41,6 +41,13 @@ Cybersecurity and data privacy
 ### Details
 There were 6 Alart. There were 6 risks. Alert Path Traversal and SQL Injection was high. Content Security Policy (CSP) Header Not Set and Missing Anti-clickjacking Header alert is medium. X-Content-Type-Options Header Missing alert is low and User Agent Fuzzer is Informational. 
 
+![First Report Summary](First.jpg)
+
+
+
+
+
+
 
 
 
