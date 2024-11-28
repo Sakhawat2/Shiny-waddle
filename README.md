@@ -25,6 +25,8 @@ Cybersecurity and data privacy
 | 11/22/2024 | The Booking system project → Phase 1 | 8 hour |
 
 
+
+----------------------------------------------------------------------------------------------------------
 ## Introduction to the portswigger environment (Lab )
 | Date | Topic (Lab) |Description (Lab) | Reflection Status |
 | :---         |     :---:      |     :---:      |          ---: |
@@ -33,6 +35,32 @@ Cybersecurity and data privacy
 | 11/7/2024 | Access control | Unprotected admin functionality | Submitted |
 
 
+---------------------------------------------------------------------------------------------------------------------
+## The Booking system project → Phase 2
+1. [Link to first report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/project%20%E2%86%92%20Phase%202/Before_fix/First%20before%20fixing-.md)
+2. [Link to app.js](https://github.com/Sakhawat2/Shiny-waddle/blob/main/project%20%E2%86%92%20Phase%202/Before_fix/app.js)
+3. [Link to whole code for before fix](https://github.com/Sakhawat2/Shiny-waddle/tree/main/project%20%E2%86%92%20Phase%202/Before_fix)
+4. [Link to Second Report]( https://github.com/Sakhawat2/Shiny-waddle/blob/main/After_fix/SecondReport-.md)
+5. [Link to app.js_second](https://github.com/Sakhawat2/Shiny-waddle/blob/main/After_fix/app.js)
+6. [Link to whole code](https://github.com/Sakhawat2/Shiny-waddle/tree/main/After_fix)
+   
+### Details Report
+a.	Implemented the index page
+
+b.	Solved the Content Security Policy (CSP) Header alert.
+
+Added into app.js
+
+
+// Middleware to set CSP header
+
+app.use('*', (c, next) => {
+
+    c.header('Content-Security-Policy', "default-src 'self'");
+    
+    return next(); })
+
+----------------------------------------------------------------------------------------------------
 ## The Booking system project → Phase 1
 1. [First Report](First_generate_report.MD)
 
