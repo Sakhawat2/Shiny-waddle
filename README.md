@@ -23,6 +23,7 @@ Cybersecurity and data privacy
 | 11/10/2024 | Lab: Unprotected admin functionality with unpredictable URL | 30 min |
 | 11/10/2024 | Lab: User role controlled by request parameter | 30 min |
 | 11/22/2024 | The Booking system project → Phase 1 | 8 hour |
+| 11/28/2024 | The Booking system project → Phase 2 | 8 hour |
 
 
 
