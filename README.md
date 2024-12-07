@@ -35,6 +35,9 @@ Cybersecurity and data privacy
 | 11/6/2024 | Authentication | Username enumeration via different responses | Submitted |
 | 11/7/2024 | Access control | Unprotected admin functionality | Submitted |
 
+---------------------------------------------------------------------------------------------------------------------------
+## The Booking system project → Phase 3
+
 
 ---------------------------------------------------------------------------------------------------------------------
 ## The Booking system project → Phase 2
