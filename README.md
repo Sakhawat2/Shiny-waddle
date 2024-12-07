@@ -24,6 +24,7 @@ Cybersecurity and data privacy
 | 11/10/2024 | Lab: User role controlled by request parameter | 30 min |
 | 11/22/2024 | The Booking system project → Phase 1 | 8 hour |
 | 11/28/2024 | The Booking system project → Phase 2 | 8 hour |
+| 12/7/2024 | The Booking system project → Phase 3 | 8 hour |
 
 
 
@@ -35,8 +36,128 @@ Cybersecurity and data privacy
 | 11/6/2024 | Authentication | Username enumeration via different responses | Submitted |
 | 11/7/2024 | Access control | Unprotected admin functionality | Submitted |
 
+
+
 ---------------------------------------------------------------------------------------------------------------------------
 ## The Booking system project → Phase 3
+
+#### Attachments
+| Date | Topic (Lab) |
+| :---         |     :---:      |
+| Report-1 Before fix| [Report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3/First%20Report-.md) |
+| Complete folder before fix| [TheBookingSystemPhase3](https://github.com/Sakhawat2/Shiny-waddle/tree/main/TheBookingSystemphase3) |
+| app.jf After fix| [app.js]( https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3/app.js) |
+| Report-2 After fix| [Report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3After%20fix/Report_Afterfix.md) |
+| Complete folder After fix| [[TheBookingSystemPhase3](https://github.com/Sakhawat2/Shiny-waddle/tree/main/TheBookingSystemphase3After%20fix)
+| app.js After fix| [app.js](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3After%20fix/app.js) |
+
+### Security check 
+Most 5 important points need to fix as soon as possible.
+
+1. **Error Handling and Logging**: There is a lack of error handling and logging across various functions, particularly in the serveStaticFile function. By reviewing the serveStaticFile function and noticing the absence of detailed error logging. To solve, below code has been **implemented**.
+
+   
+ // Serve static files
+ 
+async function serveStaticFile(path, contentType) {
+
+    try {
+    
+        const data = await Deno.readFile(path);
+        
+        return new Response(data, {
+        
+            headers: { "Content-Type": contentType },
+            
+        });
+        
+    } catch (error) {
+    
+        console.error("File not found:", path, error);
+        
+        return new Response("File not found", { status: 404 });
+        
+    }    
+}
+
+2. **Utility Function for Content Type**: The getContentType function needs to ensure it covers a comprehensive range of MIME types. It found by examining the getContentType function and its use for static file serving. To solve, below code has been **implemented**.
+
+   // Utility: Get content type for static files
+   
+function getContentType(filePath) {
+
+    const ext = filePath.split(".").pop();
+    
+    const mimeTypes = {
+    
+        html: "text/html",
+        
+        css: "text/css",
+        
+        js: "application/javascript",
+        
+        png: "image/png",
+        
+        jpg: "image/jpeg",
+        
+        jpeg: "image/jpeg",
+        
+        gif: "image/gif",
+        
+        svg: "image/svg+xml",
+        
+        json: "application/json",
+        
+    };
+    
+    return mimeTypes[ext] || "application/octet-stream";
+    
+}
+
+3. **Typo in File Path Concatenation**: There's a typo in the code when concatenating the file path for serving static files. It found by examining the serveStaticFile function and its invocation in the route handling. Correct the typo in the file path concatenation. The line should be:
+
+   const filePath = `.${url.pathname}`;
+
+   4. **Missing Initialization of sessionStore**: The session store is not properly initialized within app.js. it found by reviewing the code and noticing the direct use of sessionStore without proper initialization. Need to sessionStore is initialized correctly and used consistently within sessionService.js.
+  
+   5. **Inconsistent Response Headers**: The addSecurityHeaders function uses a deprecated pattern. It found by examining how the security headers are set within the addSecurityHeaders function. To solve, below code has been added.(**implemented**)
+      
+
+      async function addSecurityHeaders(req, handler) {
+      
+  const response = await handler(req);
+  
+
+  response.headers.set("Content-Security-Policy",
+  
+      "default-src 'self'; " +
+
+      "script-src 'self'; " +
+      
+      "style-src 'self'; " +
+      
+      "img-src 'self'; " +
+      
+      "frame-ancestors 'none'; " +
+      
+      "form-action 'self';");
+      
+  response.headers.set("X-Frame-Options", "DENY");
+  
+  response.headers.set("X-Content-Type-Options", "nosniff"); 
+  return response;  
+}
+
+
+
+
+
+ 
+
+
+
+
+
 
 
 ---------------------------------------------------------------------------------------------------------------------
