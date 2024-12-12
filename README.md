@@ -39,9 +39,9 @@ Cybersecurity and data privacy
 #### Attachments
 | Topic | Link |
 | :---         |     :---:      |
-| Report| [Report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3/First%20Report-.md) |
-| app.js| [Report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3/First%20Report-.md) |
-| Whole Folder| [Report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3/First%20Report-.md) |
+| Report| [Report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystem_phase4/Generated%20Report-.md) |
+| app.js| [app.js](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystem_phase4/app.js) |
+| Phase 4| [Phase 4](https://github.com/Sakhawat2/Shiny-waddle/tree/main/TheBookingSystem_phase4) |
 
 
 
@@ -49,21 +49,24 @@ Cybersecurity and data privacy
 ### Step 1: Add the Privacy Policy to the booking system
 - Privacy Notice and Terms of Service page has been added and works smoothly.
 - 
-![step1]()
+![step1](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystem_phase4/step1.jpg)
 
 ### Step 2: Add the terms of service to the booking system
 - There are two check box has been added in Register page.
 
-  ![Register]()
+  ![Register](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystem_phase4/Register.jpg)
   
 - There is one check box has been added in login page.
-  ![login]()
+  ![login](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystem_phase4/Login.jpg)
 - Some containt has been added into Privacy Notice and Terms of Service page.
 - Register page has been tested. It is not possible to register without check.
-  
-  ![Terms of Service]()
 
-   ![Terms of Service]()
+  
+  ![Terms of Service](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystem_phase4/Terms%20.jpg)
+
+  
+
+   ![Privacy Notice](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystem_phase4/Login.jpg)
 
 
 ### Step 3: Add the terms of service to the booking system
