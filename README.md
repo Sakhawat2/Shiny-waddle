@@ -66,7 +66,7 @@ Cybersecurity and data privacy
 
   
 
-   ![Privacy Notice](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystem_phase4/Login.jpg)
+   ![Privacy Notice](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystem_phase4/Privacy.jpg)
 
 
 ### Step 3: Add the terms of service to the booking system
