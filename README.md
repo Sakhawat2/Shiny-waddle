@@ -2,12 +2,8 @@
 Cybersecurity and data privacy
 
 # Logbook
-## Day 1
-- Created the Github repo.
-- Added a logbook.md file into the repo.
-- Made the reop is accessible to the teacher.
 
-## Table
+## Table: Indepent work
 | Date | Description | Used time |
 | :---         |     :---:      |          ---: |
 | 11/4/2024 | The Repo has been created after watch the tutorial | 15 min |
@@ -25,6 +21,7 @@ Cybersecurity and data privacy
 | 11/22/2024 | The Booking system project → Phase 1 | 8 hour |
 | 11/28/2024 | The Booking system project → Phase 2 | 8 hour |
 | 12/7/2024 | The Booking system project → Phase 3 | 8 hour |
+| 12/12/2024 | The Booking system project → Phase 4 | 5 hour |
 
 
 
@@ -36,13 +33,50 @@ Cybersecurity and data privacy
 | 11/6/2024 | Authentication | Username enumeration via different responses | Submitted |
 | 11/7/2024 | Access control | Unprotected admin functionality | Submitted |
 
+------------------------------------------------------------------------------------------------------------------------
+## The Booking system project → Phase 4
+
+#### Attachments
+| Topic | Link |
+| :---         |     :---:      |
+| Report| [Report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3/First%20Report-.md) |
+| app.js| [Report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3/First%20Report-.md) |
+| Whole Folder| [Report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3/First%20Report-.md) |
+
+
+
+
+### Step 1: Add the Privacy Policy to the booking system
+- Privacy Notice and Terms of Service page has been added and works smoothly.
+- 
+![step1]()
+
+### Step 2: Add the terms of service to the booking system
+- There are two check box has been added in Register page.
+
+  ![Register]()
+  
+- There is one check box has been added in login page.
+  ![login]()
+- Some containt has been added into Privacy Notice and Terms of Service page.
+- Register page has been tested. It is not possible to register without check.
+  
+  ![Terms of Service]()
+
+   ![Terms of Service]()
+
+
+### Step 3: Add the terms of service to the booking system
+- Functional and security test has been done and satisfied.
+
+
 
 
 ---------------------------------------------------------------------------------------------------------------------------
 ## The Booking system project → Phase 3
 
 #### Attachments
-| Date | Topic (Lab) |
+| Topic | Link |
 | :---         |     :---:      |
 | Report-1 Before fix| [Report](https://github.com/Sakhawat2/Shiny-waddle/blob/main/TheBookingSystemphase3/First%20Report-.md) |
 | Complete folder before fix| [TheBookingSystemPhase3](https://github.com/Sakhawat2/Shiny-waddle/tree/main/TheBookingSystemphase3) |
